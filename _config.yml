@@ -1,0 +1,33 @@
+# Site settings
+title: AR-GE TEKNOLOJİ VE İNOVASYON KULÜBÜ
+email: ar-getit@outlook.com
+url: https://www.gtuatik.com
+description: "/düzenleniyor/"
+
+
+
+menu:
+- {name: Ana Sayfa, link: '/'}
+- {name: Etkinlikler, link: '/events'}
+- {name: Hakkımızda, link: '/about-us'}
+- {name: İletişim, link: '/contact-us'}
+
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#2bf0e3'
+
+# Footer settings
+footer: gtuatik.com
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: instagram
+    url: https://www.instagram.com/gtuatik/
+  - title: linkedin
+    url: https://www.linkedin.com/company/
+
+# Build settings
+markdown: kramdown
+permalink: pretty
