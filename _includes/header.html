@@ -11,8 +11,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     {% for link in site.menu %}
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{{ link.link }}">{{ link.name
-                            }}</a></li>{% endfor %}
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase" href="{{ link.link }}">{{ link.name }}</a>
+                    </li>{% endfor %}
                 </ul>
             </div>
         </div>
