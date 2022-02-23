@@ -30,5 +30,4 @@ social:
     url: https://www.linkedin.com/company/
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+permalink: /:basename:output_ext
