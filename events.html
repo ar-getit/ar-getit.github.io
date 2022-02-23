@@ -1,16 +1,148 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-{% include head.html %}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>GTÜATİK</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- jquery and js code for html include-->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("b.html");
+        });
+    </script>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/special.css" rel="stylesheet" />
+</head>
 
 <body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">AR-GE TEKNOLOJİ VE İNOVASYON KULÜBÜ</span>
+        </h1>
+        <nav class="navbar navbar-expand-md navbar-light bg-light mx-md-5">
+            <div class="container-fluid">
+                <div id="logo">
+                    <a class="navbar-brand" href="https://www.gtuatik.com/">
+                        <img src="/assets/img/logo.png" alt="" class="d-inline-block align-text-top" width="30">
+                        ATİK
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ site.baseurl }}">Ana Sayfa</a>
+                        </li>
 
-    {% include header.html %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="events.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Etkinlikler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">İletişim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- content -->
+    <section class="page-section">
+        <div class="container ">
+            <div class="row bg-white bg-opacity-75">
 
-    {% include events.section.html %}
-
-    {% include footer.html %}
-
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum nisi eu ex convallis
+                    lobortis. Aliquam
+                    vitae odio turpis. Praesent pulvinar aliquam tellus et commodo. Suspendisse venenatis, sapien a
+                    facilisis hendrerit,
+                    nisl diam egestas metus, efficitur tempor risus leo non nisl. Pellentesque viverra sodales
+                    hendrerit.
+                    Integer ac nisl eu
+                    mi dictum tincidunt a nec nibh. Donec id mi tempor, porta elit vitae, aliquam nulla. Nulla
+                    pellentesque
+                    turpis facilisis
+                    sem efficitur efficitur. Ut ac finibus augue. Etiam vehicula vestibulum venenatis. Pellentesque
+                    viverra
+                    enim in neque
+                    varius, non eleifend augue euismod. Curabitur felis ante, laoreet vitae fermentum nec, iaculis nec
+                    tortor.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum nisi eu ex
+                    convallis
+                    lobortis. Aliquam
+                    vitae odio turpis. Praesent pulvinar aliquam tellus et commodo. Suspendisse venenatis, sapien a
+                    facilisis hendrerit,
+                    nisl diam egestas metus, efficitur tempor risus leo non nisl. Pellentesque viverra sodales
+                    hendrerit.
+                    Integer ac nisl eu
+                    mi dictum tincidunt a nec nibh. Donec id mi tempor, porta elit vitae, aliquam nulla. Nulla
+                    pellentesque
+                    turpis facilisis
+                    sem efficitur efficitur. Ut ac finibus augue. Etiam vehicula vestibulum venenatis. Pellentesque
+                    viverra
+                    enim in neque
+                    varius, non eleifend augue euismod. Curabitur felis ante, laoreet vitae fermentum nec, iaculis nec
+                    tortor.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum nisi eu ex
+                    convallis
+                    lobortis. Aliquam
+                    vitae odio turpis. Praesent pulvinar aliquam tellus et commodo. Suspendisse venenatis, sapien a
+                    facilisis hendrerit,
+                    <br><br><br><br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur elementum nisi eu ex
+                    convallis
+                    lobortis. Aliquam
+                    vitae odio turpis. Praesent pulvinar aliquam tellus et commodo. Suspendisse venenatis, sapien a
+                    facilisis hendrerit,
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /content -->
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; gtuatik.com 2022<br> Designed by<a
+                    href="https://www.linkedin.com/in/muhammet-koc/"> Muhammet Koc</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>
