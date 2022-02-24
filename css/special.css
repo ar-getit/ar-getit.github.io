@@ -270,7 +270,7 @@ ul.social-network li {
     margin: 0 5px;
 }
 
-.social-network a.icoTwitter:hover {
+.social-network a.icoInstagram:hover {
     background-color: #33ccff;
 }
 
@@ -278,7 +278,7 @@ ul.social-network li {
     background-color: #007bb7;
 }
 
-.social-network a.icoTwitter:hover i,
+.social-network a.icoInstagram:hover i,
 .social-network a.icoLinkedin:hover i {
     color: #fff;
 }
