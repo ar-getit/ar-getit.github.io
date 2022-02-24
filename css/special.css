@@ -5,6 +5,7 @@ nav #logo img{
 
  .fiftyfifty{
     width: 50%;
+    align-content:center;
 }
 
 .members h1,
@@ -64,20 +65,8 @@ ul.social-network li {
     margin: 0 5px;
 }
 
-.social-network a.icoFacebook:hover {
-    background-color: #3B5998;
-}
-
 .social-network a.icoTwitter:hover {
     background-color: #33ccff;
-}
-
-.social-network a.icoJoomla:hover {
-    background-color: #BD3518;
-}
-
-.social-network a.icoVimeo:hover {
-    background-color: #0590B8;
 }
 
 .social-network a.icoLinkedin:hover {
