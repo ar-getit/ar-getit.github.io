@@ -49,37 +49,39 @@
                     <h2 class="heading-section">İletişim Formu</h2>
                 </div>
                 <div class="row bg-white ">
-                    <div class="col-md-6">
+                    <div class="col-md-6 form-label">
                         <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
                         <form name="gform" id="gform" enctype="text/plain"
                             action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
                             target="hidden_iframe" onsubmit="submitted=true;">
                             <div class="row">
-                                <div class="col-md-12"></div>
-                                Adınız:<br>
-                                <input type="text" name="entry.1121865163" id="entry.1121865163" placeholder="Adınız">
-                            </div><br>
-                            <div class="col-md-12">
-                                Mail Adresiniz:<br>
-                                <input type="text" name="entry.85523279" id="entry.85523279"
-                                    placeholder="Mail Adresiniz">
+                                <div class="col-md-12">
+                                    Adınız:<br>
+                                    <input type="text" name="entry.1121865163" id="entry.1121865163"
+                                        placeholder="Adınız">
+                                </div><br>
+                                <div class="col-md-12">
+                                    Mail Adresiniz:<br>
+                                    <input type="text" name="entry.85523279" id="entry.85523279"
+                                        placeholder="Mail Adresiniz">
+                                </div>
+                                <div class="col-md-12">
+                                    Konu:<br>
+                                    <input type="text" name="entry.1648347375" id="entry.1648347375" placeholder="Konu">
+                                </div>
+                                <div class="col-md-12">
+                                    Mesaj:<br>
+                                    <input type="text" name="entry.302648110" id="entry.302648110" placeholder="Mesaj">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" value="Submit">
+                                </div>
                             </div>
-                            <div class="col-md-12">
-                                Konu:<br>
-                                <input type="text" name="entry.1648347375" id="entry.1648347375" placeholder="Konu">
-                            </div>
-                            <div class="col-md-12">
-                                Mesaj:<br>
-                                <input type="text" name="entry.302648110" id="entry.302648110" placeholder="Mesaj">
-                            </div>
-                            <div class="col-md-12">
-                                <input type="submit" value="Submit">
-                            </div>
-                    </div>
-                    </form>
+                        </form>
 
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                        onload="if(submitted) {}"></iframe>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                            onload="if(submitted) {}"></iframe>
+                    </div>
                 </div>
             </div>
 
@@ -186,7 +188,6 @@
                     </div>
                 </div>
             </section>
-        </div>
         </div>
     </section>
     <!-- /content -->
