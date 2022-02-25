@@ -44,123 +44,138 @@
     <!-- content -->
     <section class="page-section">
         <div class="container ">
-            <div class="row bg-white ">
-                <div class=" bg-dark ">
-                    <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
-                    <form name="gform" id="gform" enctype="text/plain"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
-                        target="hidden_iframe" onsubmit="submitted=true;">
-                        Adınız:<br>
-                        <input type="text" name="entry.1121865163" id="entry.1121865163"><br>
-                        Mail Adresiniz:<br>
-                        <input type="text" name="entry.85523279" id="entry.85523279">
-                        Konu:<br>
-                        <input type="text" name="entry.1648347375" id="entry.1648347375">
-                        Mesaj:<br>
-                        <input type="text" name="entry.302648110" id="entry.302648110">
-                        <input type="submit" value="Submit">
+            <div class=" bg-gradient row justify-content-center ">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">İletişim Formu</h2>
+                </div>
+                <div class="row bg-white ">
+                    <div class="col-md-6">
+                        <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
+                        <form name="gform" id="gform" enctype="text/plain"
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
+                            target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="row">
+                                <div class="col-md-12"></div>
+                                Adınız:<br>
+                                <input type="text" name="entry.1121865163" id="entry.1121865163" placeholder="Adınız">
+                            </div><br>
+                            <div class="col-md-12">
+                                Mail Adresiniz:<br>
+                                <input type="text" name="entry.85523279" id="entry.85523279"
+                                    placeholder="Mail Adresiniz">
+                            </div>
+                            <div class="col-md-12">
+                                Konu:<br>
+                                <input type="text" name="entry.1648347375" id="entry.1648347375" placeholder="Konu">
+                            </div>
+                            <div class="col-md-12">
+                                Mesaj:<br>
+                                <input type="text" name="entry.302648110" id="entry.302648110" placeholder="Mesaj">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" value="Submit">
+                            </div>
+                    </div>
                     </form>
 
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                         onload="if(submitted) {}"></iframe>
                 </div>
+            </div>
 
-                <section class="form-label">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 text-center mb-5">
-                                <h2 class="heading-section">İletişim Formu</h2>
-                            </div>
+            <section class="form-label">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center mb-5">
+                            <h2 class="heading-section">İletişim Formu</h2>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-10">
-                                <div class="wrapper">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-6">
-                                            <div class="contact-wrap w-100 p-lg-5 p-4">
-                                                <h3 class="mb-4">Send us a message</h3>
-                                                <div id="form-message-warning" class="mb-4"></div>
-                                                <div id="form-message-success" class="mb-4">
-                                                    MEsaj gönderildi!
-                                                </div>
-                                                <form method="POST" id="contactForm" name="contactForm"
-                                                    class="contactForm">
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="name"
-                                                                    id="name" placeholder="Name">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="email" class="form-control" name="email"
-                                                                    id="email" placeholder="Email">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="subject"
-                                                                    id="subject" placeholder="Subject">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <textarea name="message" class="form-control"
-                                                                    id="message" cols="30" rows="6"
-                                                                    placeholder="Message"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <input type="submit" value="Send Message"
-                                                                    class="btn btn-primary">
-                                                                <div class="submitting"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="wrapper">
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <div class="contact-wrap w-100 p-lg-5 p-4">
+                                            <h3 class="mb-4">Send us a message</h3>
+                                            <div id="form-message-warning" class="mb-4"></div>
+                                            <div id="form-message-success" class="mb-4">
+                                                MEsaj gönderildi!
                                             </div>
+                                            <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="name"
+                                                                id="name" placeholder="Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" name="email"
+                                                                id="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="subject"
+                                                                id="subject" placeholder="Subject">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <textarea name="message" class="form-control" id="message"
+                                                                cols="30" rows="6" placeholder="Message"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="submit" value="Send Message"
+                                                                class="btn btn-primary">
+                                                            <div class="submitting"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="col-md-6 d-flex align-items-stretch">
-                                            <div class="info-wrap w-100 p-lg-5 p-4 img">
-                                                <h3>Contact us</h3>
-                                                <p class="mb-4">We're open for any suggestion or just to have a chat</p>
-                                                <div class="dbox w-100 d-flex align-items-start">
-                                                    <div class="icon d-flex align-items-center justify-content-center">
-                                                        <span class="fa fa-map-marker"></span>
-                                                    </div>
-                                                    <div class="text pl-3">
-                                                        <p><span>Address:</span> 198 West 21th Street, Suite 721 New
-                                                            York NY 10016</p>
-                                                    </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-stretch">
+                                        <div class="info-wrap w-100 p-lg-5 p-4 img">
+                                            <h3>Contact us</h3>
+                                            <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                                            <div class="dbox w-100 d-flex align-items-start">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-map-marker"></span>
                                                 </div>
-                                                <div class="dbox w-100 d-flex align-items-center">
-                                                    <div class="icon d-flex align-items-center justify-content-center">
-                                                        <span class="fa fa-phone"></span>
-                                                    </div>
-                                                    <div class="text pl-3">
-                                                        <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355
-                                                                98</a></p>
-                                                    </div>
+                                                <div class="text pl-3">
+                                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New
+                                                        York NY 10016</p>
                                                 </div>
-                                                <div class="dbox w-100 d-flex align-items-center">
-                                                    <div class="icon d-flex align-items-center justify-content-center">
-                                                        <span class="fa fa-paper-plane"></span>
-                                                    </div>
-                                                    <div class="text pl-3">
-                                                        <p><span>Email:</span> <a
-                                                                href="mailto:info@yoursite.com">info@yoursite.com</a>
-                                                        </p>
-                                                    </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-phone"></span>
                                                 </div>
-                                                <div class="dbox w-100 d-flex align-items-center">
-                                                    <div class="icon d-flex align-items-center justify-content-center">
-                                                        <span class="fa fa-globe"></span>
-                                                    </div>
-                                                    <div class="text pl-3">
-                                                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                                                    </div>
+                                                <div class="text pl-3">
+                                                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355
+                                                            98</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-paper-plane"></span>
+                                                </div>
+                                                <div class="text pl-3">
+                                                    <p><span>Email:</span> <a
+                                                            href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center">
+                                                <div class="icon d-flex align-items-center justify-content-center">
+                                                    <span class="fa fa-globe"></span>
+                                                </div>
+                                                <div class="text pl-3">
+                                                    <p><span>Website</span> <a href="#">yoursite.com</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,8 +184,9 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+        </div>
         </div>
     </section>
     <!-- /content -->
