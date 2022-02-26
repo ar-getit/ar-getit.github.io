@@ -8,6 +8,10 @@ nav #logo img{
     align-content:center;
 }
 
+.fs16{
+  font-size: 16pt;
+}
+
 
 body {
   background-image:  url("../assets/img/bg.jpg");
