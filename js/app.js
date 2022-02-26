@@ -22,7 +22,7 @@ function init() {
     camera.position.set(-8,3,25);
 
     const ambient = new THREE.AmbientLight(0x404040,5);
-    scene.add(ambient);
+    scene.add(ambient); 
 
     //renderer
     renderer = new THREE.WEbGLRenderer({antialias:true, alpha:true});
@@ -33,8 +33,8 @@ function init() {
 
     //load model
     let loader = new THREE.GLTFLoader();
-    loader.load('./assets/3d/atik_name.gltf', function(gltf){
-        scene.add(gltf.scene);
+    loader.load('assets/3d/scene.gltf', function(gltf){
+        scene.add(gltf.scene); 
         house = gltf.scene.children[0];
         animate();
 
