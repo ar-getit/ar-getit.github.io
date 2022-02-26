@@ -19,7 +19,10 @@ function init() {
 
     //camera Setup
     camera = new THREE.PerspectiveCamera(fov,aspect,near,far);
-    camera.position.set(-50,40,50);
+    camera.position.set(-8,3,25);
+
+    const ambient = new THREE.AmbientLight(0x404040,5);
+    scene.add(ambient);
 
     //renderer
     renderer = new THREE.WEbGLRenderer({antialias:true, alpha:true});
@@ -32,9 +35,15 @@ function init() {
     let loader = new THREE.GLTFLoader();
     loader.load('./assets/3d/atik_name.gltf', function(gltf){
         scene.add(gltf.scene);
-        renderer.render(scene, camera)
+        house = gltf.scene.children[0];
+        animate();
 
     });
+}
+function animate(){
+    requestAnimationFrame(animate);
+    house.rotation.z += 0.005;
+    renderer.render(scene, camera);
 }
 
 init()
