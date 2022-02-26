@@ -39,11 +39,12 @@
     <section class="page-section">
         <div class="container ">
             <div class=" bg-white row justify-content-center ">
-                <div class="col-md-6 text-center mb-5 mt-3">
-                    <h2 class="heading-section">İletişim Formu</h2>
-                </div>
+
                 <div class="row bg-white ">
                     <div class="col-md-6 form-label bg-white">
+                        <div class="text-center mb-5 mt-3">
+                            <h2 class="heading-section">İletişim Formu</h2>
+                        </div>
                         <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
                         <form name="gform" id="gform" enctype="text/plain"
                             action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
@@ -78,15 +79,16 @@
                     </div>
                     <div class="col-md-6 ">
                         <div class=" w-100 p-lg-5 p-4 img">
-                            <h3>Contact us</h3>
-                            <p class="mb-4">We're open for any suggestion or just to have a chat</p>
                             <div class=" w-100 d-flex align-items-start">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <span class="fa fa-map-marker"></span>
                                 </div>
                                 <div class="text ">
-                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016
-                                    </p>
+                                    <p><span>Addres:</span> Gebze Teknik Üniversitesi Gebze/Kocaeli
+                                    </p><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4332.938850552715!2d29.356617718659525!3d40.80764911892537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cade56af489127%3A0x28e488940d24037f!2sGebze%20Teknik%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1645835085984!5m2!1str!2str"
+                                        width="600" height="600" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
                                 </div>
                             </div>
                             <div class=" w-100 d-flex align-items-center">
@@ -94,7 +96,7 @@
                                     <span class="fa fa-phone"></span>
                                 </div>
                                 <div class="text ">
-                                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                    <p><span>Telefon:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
                                 </div>
                             </div>
                             <div class=" w-100 d-flex align-items-center">
@@ -102,7 +104,7 @@
                                     <span class="fa fa-paper-plane"></span>
                                 </div>
                                 <div class="text ">
-                                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                    <p><span>Mail:</span> <a href="mailto:gtuatik@gmail.com">gtuatik@gmail.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -131,7 +133,7 @@
     <script type="text/javascript">
         $('#gform').on('submit', function (e) {
             $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Your submission has been processed...');
+            $('#gform').prepend('Mesajınız başarıyla gönderildi...');
         });
     </script>
 </body>
