@@ -27,7 +27,7 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/special.css" rel="stylesheet" />
 </head>
 
@@ -43,76 +43,73 @@
                     <h2 class="heading-section">İletişim Formu</h2>
                 </div>
                 <div class="row bg-white ">
-                    <div class="col-md-10">
-                        <div class="col-md-6 form-label " style="background-color: maroon;">
-                            <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
-                            <form name="gform" id="gform" enctype="text/plain"
-                                action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
-                                target="hidden_iframe" onsubmit="submitted=true;">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        Adınız:<br>
-                                        <input type="text" name="entry.1121865163" id="entry.1121865163"
-                                            placeholder="Adınız">
-                                    </div>
-                                    <div class="col-md-12">
-                                        Mail Adresiniz:<br>
-                                        <input type="text" name="entry.85523279" id="entry.85523279"
-                                            placeholder="Mail Adresiniz">
-                                    </div>
-                                    <div class="col-md-12">
-                                        Konu:<br>
-                                        <input type="text" name="entry.1648347375" id="entry.1648347375"
-                                            placeholder="Konu">
-                                    </div>
-                                    <div class="col-md-12">
-                                        Mesaj:<br>
-                                        <input type="text" name="entry.302648110" id="entry.302648110"
-                                            placeholder="Mesaj">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" value="Submit">
-                                    </div>
+                    <div class="col-md-6 form-label bg-white">
+                        <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
+                        <form name="gform" id="gform" enctype="text/plain"
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
+                            target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    Adınız:<br>
+                                    <input type="text" name="entry.1121865163" id="entry.1121865163"
+                                        placeholder="Adınız">
                                 </div>
-                            </form>
-
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                                onload="if(submitted) {}"></iframe>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class=" w-100 p-lg-5 p-4 img">
-                                <h3>Contact us</h3>
-                                <p class="mb-4">We're open for any suggestion or just to have a chat</p>
-                                <div class=" w-100 d-flex align-items-start">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-map-marker"></span>
-                                    </div>
-                                    <div class="text ">
-                                        <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016
-                                        </p>
-                                    </div>
+                                <div class="col-md-12">
+                                    Mail Adresiniz:<br>
+                                    <input type="text" name="entry.85523279" id="entry.85523279"
+                                        placeholder="Mail Adresiniz">
                                 </div>
-                                <div class=" w-100 d-flex align-items-center">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-phone"></span>
-                                    </div>
-                                    <div class="text ">
-                                        <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-                                    </div>
+                                <div class="col-md-12">
+                                    Konu:<br>
+                                    <input type="text" name="entry.1648347375" id="entry.1648347375" placeholder="Konu">
                                 </div>
-                                <div class=" w-100 d-flex align-items-center">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-paper-plane"></span>
-                                    </div>
-                                    <div class="text ">
-                                        <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
-                                        </p>
-                                    </div>
+                                <div class="col-md-12">
+                                    Mesaj:<br>
+                                    <input type="text" name="entry.302648110" id="entry.302648110" placeholder="Mesaj">
                                 </div>
-
+                                <div class="col-md-12">
+                                    <input type="submit" value="Submit">
+                                </div>
                             </div>
+                        </form>
+
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                            onload="if(submitted) {}"></iframe>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class=" w-100 p-lg-5 p-4 img">
+                            <h3>Contact us</h3>
+                            <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                            <div class=" w-100 d-flex align-items-start">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-map-marker"></span>
+                                </div>
+                                <div class="text ">
+                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016
+                                    </p>
+                                </div>
+                            </div>
+                            <div class=" w-100 d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                                <div class="text ">
+                                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                </div>
+                            </div>
+                            <div class=" w-100 d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="fa fa-paper-plane"></span>
+                                </div>
+                                <div class="text ">
+                                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
