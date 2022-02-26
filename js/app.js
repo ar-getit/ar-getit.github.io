@@ -1,10 +1,11 @@
 //variables for setup
 
+
 let container
 let camera
 let renderer
 let scene
-let house
+let model
 
 function init() {
     container = document.querySelector('.scene');
@@ -19,13 +20,12 @@ function init() {
 
     //camera Setup
     camera = new THREE.PerspectiveCamera(fov,aspect,near,far);
-    camera.position.set(-8,3,25);
-
+    camera.position.set(10,10,300);
     const ambient = new THREE.AmbientLight(0x404040,5);
     scene.add(ambient); 
 
     //renderer
-    renderer = new THREE.WEbGLRenderer({antialias:true, alpha:true});
+    renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
@@ -33,17 +33,27 @@ function init() {
 
     //load model
     let loader = new THREE.GLTFLoader();
-    loader.load('assets/3d/scene.gltf', function(gltf){
+    loader.load('assets/3d/namev4.glb', function(gltf){
         scene.add(gltf.scene); 
-        house = gltf.scene.children[0];
+        model = gltf.scene.children[0];
         animate();
 
     });
 }
 function animate(){
     requestAnimationFrame(animate);
-    house.rotation.z += 0.005;
+   // model.rotation.y += 0.01;
+  //  model.rotation.x += 0.01;
+    model.rotation.z += 0.001;
     renderer.render(scene, camera);
 }
 
 init()
+
+function onWindowResize(){
+    camera.aspect = container.clientWidth/container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth,container.clientHeight);
+}
+
+window.addEventListener('resize',onWindowResize);
