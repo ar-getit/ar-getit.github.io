@@ -20,10 +20,6 @@ p {
   line-height: 1.75;
 }
 
-.text-faded {
-  color: #f6e1c5;
-}
-
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -114,7 +110,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(174, 191, 206, 0.685);
+  background-color: #212529;
 }
 
 .intro {
