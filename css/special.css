@@ -12,6 +12,14 @@ nav #logo img{
   font-size: 16pt;
 }
 
+.Instagram:hover{
+ color:crimson;
+}
+
+.Linkedin:hover{
+ color: #fff;
+}
+
 @keyframes transitionIn{
   from{
     opacity: 0;
