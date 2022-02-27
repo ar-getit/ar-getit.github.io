@@ -33,7 +33,7 @@ function init() {
 
     //load model
     let loader = new THREE.GLTFLoader();
-    loader.load('assets/3d/namev4.glb', function(gltf){
+    loader.load('assets/3d/namev5.glb', function(gltf){
         scene.add(gltf.scene); 
         model = gltf.scene.children[0];
         animate();
@@ -44,7 +44,7 @@ function animate(){
     requestAnimationFrame(animate);
    // model.rotation.y += 0.01;
   //  model.rotation.x += 0.01;
-    model.rotation.z += 0.001;
+    model.rotation.z += 0.005;
     renderer.render(scene, camera);
 }
 
