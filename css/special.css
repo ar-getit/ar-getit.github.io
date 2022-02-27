@@ -12,12 +12,25 @@ nav #logo img{
   font-size: 16pt;
 }
 
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 3;
+    transform: rotateX(0);
+
+  }
+}
+
 
 body {
   background-image:  url("../assets/img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  animation: transitionIn 0.75s;
 }
 
 p {
