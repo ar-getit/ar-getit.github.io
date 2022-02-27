@@ -16,10 +16,13 @@ nav #logo img{
   from{
     opacity: 0;
     transform: rotateX(-10deg);
+   /* transform: rotateY(-10px); */ 
   }
   to{
     opacity: 3;
     transform: rotateX(0);
+    
+   /* transform: rotateY(0); */ 
 
   }
 }
