@@ -4,3 +4,8 @@ $(function () {
 $(function () {
     $("#footerContent").load("includes/footer.html");
 });
+
+
+function load_home() {
+    document.getElementById("footer").innerHTML = " ";
+}
