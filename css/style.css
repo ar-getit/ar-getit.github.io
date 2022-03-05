@@ -74,48 +74,28 @@ p {
   background-color: #f8f9fa9f;
 }
 
-.members h1,
-.members h2,
-.members h3,
-.members h4,
-.members h5,
-.members h6 {
-    color: #3e4555;
-}
 
-.members .font-weight-medium {
-    font-weight: 500;
-}
 
-.members .bg-light {
-    background-color: #f4f8fa !important;
-}
-
-.members .subtitle {
-    color: #8d97ad;
-    line-height: 24px;
-}
-
-.members .pro-pic {
+.pro-pic {
     min-height: 200px;
 }
 
-.members .pro-pic .card-img-overlay ul {
+ .pro-pic .card-img-overlay ul {
     top: 50%;
 }
 
-.members .pro-pic .card-img-overlay ul li a {
+ .pro-pic .card-img-overlay ul li a {
     -webkit-transition: 0.1s ease-in;
     -o-transition: 0.1s ease-in;
     transition: 0.1s ease-in;
 }
 
-.members .pro-pic .card-img-overlay ul li a:hover {
+ .pro-pic .card-img-overlay ul li a:hover {
     -webkit-transform: translate3d(0px, -5px, 0px);
     transform: translate3d(0px, -5px, 0px);
 }
 
-.members .pro-pic:hover .card-img-overlay {
+ .pro-pic:hover .card-img-overlay {
     display: block;
 }
 
