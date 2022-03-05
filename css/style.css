@@ -74,29 +74,9 @@ p {
   background-color: #f8f9fa9f;
 }
 
-
-
-.pro-pic {
-    min-height: 200px;
-}
-
- .pro-pic .card-img-overlay ul {
-    top: 50%;
-}
-
- .pro-pic .card-img-overlay ul li a {
-    -webkit-transition: 0.1s ease-in;
-    -o-transition: 0.1s ease-in;
-    transition: 0.1s ease-in;
-}
-
- .pro-pic .card-img-overlay ul li a:hover {
-    -webkit-transform: translate3d(0px, -5px, 0px);
-    transform: translate3d(0px, -5px, 0px);
-}
-
- .pro-pic:hover .card-img-overlay {
-    display: block;
+.image{
+  width: 70%;
+  margin: auto;
 }
 
 ul.social-network {
